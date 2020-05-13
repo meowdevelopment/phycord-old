@@ -1,0 +1,78 @@
+#channel-bar {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 6vw;
+  background-color: var(--background-dark);
+  height: 100%;
+  width: 18vw;
+}
+#channel-bar-title {
+  text-align: center;
+  display: block;
+  height: 6vh;
+  padding: 4px;
+  cursor: pointer;
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#channel-bar-title:hover {
+  background-color: var(--background-black);
+}
+#channel-divider {
+  display: block;
+  background-color: var(--background-light);
+  width: 10vw;
+  height: 2px;
+  margin: -10px 4vw 4px 4vw;
+  border-radius: 10px;
+  transition: width 0.4s, margin 0.4s;
+  pointer-events: none;
+}
+
+.channel {
+  display: block;
+  margin: 2px;
+  height: 30px;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 8px;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 26px;
+  position: relative;
+}
+.channel:hover {
+  background-color: var(--background-black);
+}
+.channel::before {
+  content: var(--hash);
+  position: absolute;
+  top: 6px;
+  left: 5px;
+}
+.channel[selected] {
+  background-color: var(--background-black);
+}
+
+#channel-list {
+  display: block;
+  height: 87vh;
+}
+
+#channel-bar-footer {
+  display: block;
+  height: 7vh;
+  padding: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#channel-bar-footer:hover {
+  background-color: var(--background-black);
+}

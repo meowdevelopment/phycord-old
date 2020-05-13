@@ -1,0 +1,18 @@
+{
+  "username": "User",
+  "discriminator": "0000",
+  "avatarURL": "https://phycord.glitch.me/assets/defaultAvatar.png",
+  "backgroundURL": "https://phycord.glitch.me/assets/defaultBackground.png",
+  "bio": "A user :3",
+  "status": {
+    "presence": "ONLINE",
+    "emoji": "👍",
+    "text": "Being a User",
+    "type": "CUSTOM"
+  },
+  "points": 0,
+  "emojis": [],
+  "badges": ["STAFF"],
+  "friends": [],
+  "guilds": []
+}

@@ -1,0 +1,75 @@
+:root {
+  --text: #E0E0E0;
+  --link: #00ADFF;
+  --hash: url("/hashtag.svg");
+
+  --background-bright: #2d2c2c;
+  --background-light: #1b1a1a;
+  --background-dark: #0e0d0d;
+  --background-black: #060606;
+
+  --discord-purple: #7289DA;
+  --discord-purple-darker: #5F72B3;
+  --discord-gray: #99AAB5;
+  --discord-gray-darker: #455A64;
+  --discord-dark: #2C2F33;
+  --discord-black: #23272A;
+  --discord-black-darker: #151515;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  overflow: hidden;
+  color: var(--text);
+  font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+  user-select: none;
+}
+
+a {
+  color: var(--link);
+}
+a:hover {
+  color: blue;
+}
+
+* {
+  outline: 0 none;
+}
+
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-button,
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track-piece,
+*::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-corner,
+*::-webkit-resizer {
+  background: transparent;
+}
+*::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+*::-webkit-scrollbar-track-piece {
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  background: var(--background-light);
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--background-dark);
+  border-radius: 6px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--background-black);
+}
+*::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}

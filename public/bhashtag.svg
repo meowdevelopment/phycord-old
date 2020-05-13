@@ -1,0 +1,33 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  x="0px"
+  y="0px"
+  width="20"
+  height="20"
+  viewBox="0 0 172 172"
+  style=" fill:#000000;"
+>
+  <g
+    fill="none"
+    fill-rule="nonzero"
+    stroke="none"
+    stroke-width="1"
+    stroke-linecap="butt"
+    stroke-linejoin="miter"
+    stroke-miterlimit="10"
+    stroke-dasharray=""
+    stroke-dashoffset="0"
+    font-family="none"
+    font-weight="none"
+    font-size="none"
+    text-anchor="none"
+    style="mix-blend-mode: normal"
+  >
+    <path d="M0,172v-172h172v172z" fill="none"></path>
+    <g fill="#000000">
+      <path
+        d="M58.48,30.96l-2.2575,24.08h-21.5l-1.3975,13.76h21.6075l-3.5475,37.84h-21.5l-1.29,13.76h21.5l-1.935,20.3175v0.3225h13.76l1.935,-20.64h37.84l-1.935,20.3175v0.3225h13.76l1.935,-20.64h23.22l1.29,-13.76h-23.22l3.5475,-37.84h23.1125l1.3975,-13.76h-23.22l2.2575,-23.7575v-0.3225h-13.76l-2.2575,24.08h-37.84l2.2575,-23.7575v-0.3225zM68.6925,68.8h37.84l-3.5475,37.84h-37.84z"
+      ></path>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+#user-bar {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 82vw;
+  background-color: var(--background-dark);
+  height: 100%;
+  width: 18vw;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Phycord</title>
+    <meta
+      name="description"
+      content="A place for cool people to do cool stuff and talk about other cool stuff :3"
+    />
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://glitch.com/edit/favicon-app.ico"
+      type="image/x-icon"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/server.css" />
+    <link rel="stylesheet" href="./css/channel.css" />
+    <link rel="stylesheet" href="./css/message.css" />
+    <link rel="stylesheet" href="./css/user.css" />
+
+    <script src="https://cdn.codingcenter.cf/js/browserStorage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div id="server-bar">
+      <div id="open-dms" class="server"></div>
+      <div id="server-divider"></div>
+      <div id="server-list">
+        <div
+          class="server"
+          style="background-image: url('https://cdn.discordapp.com/avatars/609286417981505557/cd8058487daa00bd243095e3fbace527.png')"
+        ></div>
+        <div
+          class="server"
+          style="background-image: url('https://cdn.discordapp.com/avatars/609286417981505557/cd8058487daa00bd243095e3fbace527.png')"
+        ></div>
+        <div
+          class="server"
+          style="background-image: url('https://cdn.discordapp.com/icons/321845546534830085/a_da46adf2ebeed12a831bf2c98d651393.png')"
+        ></div>
+        <div
+          class="server"
+          style="background-image: url('https://cdn.discordapp.com/avatars/609286417981505557/cd8058487daa00bd243095e3fbace527.png')"
+        ></div>
+        <div
+          class="server"
+          style="background-image: url('https://cdn.discordapp.com/avatars/609286417981505557/cd8058487daa00bd243095e3fbace527.png')"
+        ></div>
+        <div
+          class="server"
+          style="background-image: url('https://cdn.discordapp.com/avatars/609286417981505557/cd8058487daa00bd243095e3fbace527.png')"
+        ></div>
+        <div
+          class="server"
+          style="background-image: url('https://cdn.discordapp.com/avatars/609286417981505557/cd8058487daa00bd243095e3fbace527.png')"
+        ></div>
+        <div
+          class="server"
+          style="background-image: url('https://cdn.discordapp.com/avatars/609286417981505557/cd8058487daa00bd243095e3fbace527.png')"
+        ></div>
+        <div
+          class="server"
+          style="background-image: url('https://cdn.discordapp.com/avatars/609286417981505557/cd8058487daa00bd243095e3fbace527.png')"
+        ></div>
+        <div
+          class="server"
+          style="background-image: url('https://cdn.discordapp.com/avatars/609286417981505557/cd8058487daa00bd243095e3fbace527.png')"
+        ></div>
+      </div>
+    </div>
+    <div id="channel-bar">
+      <div id="channel-bar-title">
+        Server 1 2 3
+      </div>
+      <div id="channel-divider"></div>
+      <div id="channel-list">
+        <div class="channel" selected>
+          1
+        </div>
+        <div class="channel">
+          2
+        </div>
+        <div class="channel">
+          3
+        </div>
+        <div class="channel">
+          4
+        </div>
+        <div class="channel">
+          5
+        </div>
+        <div class="channel">
+          Long channel name for the big testing
+        </div>
+        <div class="channel">
+          CaPs
+        </div>
+        <div class="channel">
+          CaPs
+        </div>
+      </div>
+      <div id="channel-bar-footer">
+        <div id="username">
+          User
+        </div>
+        <div id="discriminator">
+          #0000
+        </div>
+      </div>
+    </div>
+    <div id="message-bar">
+      <div id="message-bar-title">
+        <div id="message-bar-image"></div>
+        <div id="message-channel-name">
+          1
+        </div>
+      </div>
+      <div id="message-bar-divider"></div>
+      <div id="messages"></div>
+      <textarea id="message-send"></textarea>
+    </div>
+    <div id="user-bar"></div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+#server-bar {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: var(--background-black);
+  height: 100%;
+  width: 6vw;
+  text-align: center;
+  overflow: auto;
+}
+#server-bar::-webkit-scrollbar,
+#server-bar::-webkit-scrollbar-button,
+#server-bar::-webkit-scrollbar-track,
+#server-bar::-webkit-scrollbar-track-piece,
+#server-bar::-webkit-scrollbar-thumb,
+#server-bar::-webkit-scrollbar-corner,
+#server-bar::-webkit-resizer {
+  display: none;
+}
+
+#open-dms {
+  background-image: url("https://glitch.com/edit/favicon-app.ico");
+  background-size: 3vw 3vw;
+}
+
+#server-divider {
+  display: block;
+  background-color: var(--background-light);
+  width: 2vw;
+  height: 2px;
+  margin: 0px 1.75vw 0px 1.75vw;
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.server {
+  display: block;
+  margin: 0.9vw;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 25%;
+  background-color: var(--background-dark);
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 4vw 4vw;
+  background-position: center center;
+  transition: border-radius 0.1s linear;
+}
+.server:hover {
+  background-color: var(--background-light);
+  border-radius: 4px;
+}

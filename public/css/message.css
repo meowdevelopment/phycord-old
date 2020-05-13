@@ -1,0 +1,104 @@
+#message-bar {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 24vw;
+  background-color: var(--background-light);
+  height: 100%;
+  width: 58vw;
+}
+#message-bar-title {
+  display: block;
+  width: 58vw;
+  background-color: var(--background-dark);
+  height: 6vh;
+  padding: 4px;
+  cursor: pointer;
+}
+#message-bar-title:hover {
+  background-color: var(--background-black);
+}
+#message-bar-image {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  background-image: var(--hash);
+  width: 24px;
+  height: 20px;
+}
+#message-channel-name {
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  left: 32px;
+}
+#message-bar-divider {
+  display: block;
+  background-color: var(--background-light);
+  width: 40vw;
+  height: 2px;
+  margin: -10px 9vw 4px 9vw;
+  border-radius: 10px;
+  transition: width 0.5s, margin 0.5s;
+  pointer-events: none;
+}
+#messages {
+  height: 86vh;
+  width: 58vw;
+  position: absolute;
+  top: 6vh;
+  left: 0px;
+  padding: 8px;
+  overflow: auto;
+  user-select: text;
+}
+.message {
+  display: block;
+  padding: 4px;
+}
+.message:hover {
+  background-color: var(--background-black);
+}
+
+.message-author-image {
+  border-radius: 50%;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+}
+.message-author-name {
+  font-weight: bold;
+  display: inline-block;
+}
+.message-content {
+  display: block;
+}
+.message-buttons {
+  display: none;
+}
+
+#message-send {
+  height: 7vh;
+  width: 100%;
+  border: 0;
+  background-color: var(--background-bright);
+  resize: none;
+  overflow: hidden;
+  color: var(--text);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: block;
+}
