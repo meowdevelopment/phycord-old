@@ -3,7 +3,7 @@ const app = express();
 const server = require("http").createServer(app);
 const fs = require("fs");
 
-app.use(express.static(__dirname + "/public/"));
+app.use(express.static("public"));
 
 const listener = server.listen(process.env.PORT, function () {
   console.log("Your app is listening on port " + listener.address().port);
