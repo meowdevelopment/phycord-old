@@ -1,5 +1,5 @@
 const socket = io();
-let _ = function(e) {
+let _ = function (e) {
   return document.getElementById(e);
 };
 
@@ -31,17 +31,17 @@ function createMessage(message) {
   _("messages").scrollTop = 9999999;
 }
 
-document.querySelectorAll(".channel").forEach(c => {
-  c.onclick = function() {
+document.querySelectorAll(".channel").forEach((c) => {
+  c.onclick = function () {
     c.setAttribute("selected", "");
-    document.querySelectorAll(".channel").forEach(cc => {
+    document.querySelectorAll(".channel").forEach((cc) => {
       if (cc !== c) cc.removeAttribute("selected");
     });
   };
   c.title = c.innerHTML;
 });
 
-let escape = function(string) {
+let escape = function (string) {
   return String(string)
     .replace(/&/g, "﹠amp;")
     .replace(/"/g, "﹠quot;")
@@ -51,10 +51,10 @@ let escape = function(string) {
     .replace(/﹠/g, "&");
 };
 
-let parse = function(md) {
+let parse = function (md) {
   let newStr = escape(md);
   let split = newStr.split("`");
-  split.forEach(s => {
+  split.forEach((s) => {
     if (split.indexOf(s) % 2 == 1) {
       split[split.indexOf(s)] = s.replace(/\*/g, "&#42;");
       split[split.indexOf(s)] = s.replace(/_/g, "&#95;");
@@ -93,9 +93,9 @@ let parse = function(md) {
     thinking:
       "https://discordapp.com/assets/263a7f4eeb6f69e46d969fa479188592.svg",
     this: "https://cdn.discordapp.com/emojis/618811580997435392.png",
-    eyess: "https://cdn.discordapp.com/emojis/641110312778596389.png"
+    eyess: "https://cdn.discordapp.com/emojis/641110312778596389.png",
   };
-  Object.keys(customEmojis).forEach(em => {
+  Object.keys(customEmojis).forEach((em) => {
     newStr = newStr
       .split(":" + em + ":")
       .join(
@@ -111,23 +111,23 @@ let parse = function(md) {
 };
 
 socket.emit("fetchChannel", "0");
-socket.on("returnChannel", channel => {
-  channel.messages.forEach(m => {
+socket.on("returnChannel", (channel) => {
+  channel.messages.forEach((m) => {
     createMessage(m);
   });
 });
 
 socket.emit("fetchAccount", { email: "user@name.com", password: "userPass" });
-socket.on("returnAccount", account => {
+socket.on("returnAccount", (account) => {
   _("username").innerHTML = account.username;
   _("discriminator").innerHTML = "#" + account.discriminator;
 });
 
-socket.on("message", message => {
+socket.on("message", (message) => {
   createMessage(message);
 });
 
-_("message-send").addEventListener("keyup", function(e) {
+_("message-send").addEventListener("keyup", function (e) {
   if (e.key !== "Enter") return;
   let v = _("message-send").value.replace(/\n/g, "");
   if (!v) return;
@@ -138,34 +138,34 @@ _("message-send").addEventListener("keyup", function(e) {
       id: "0",
       username: "Thwampus the Wumpus",
       avatarURL:
-        "https://cdn.discordapp.com/avatars/601445697362984970/8ca8a0860f402bcb76686154128160c8.png?size=128"
+        "https://cdn.discordapp.com/avatars/601445697362984970/8ca8a0860f402bcb76686154128160c8.png?size=128",
     },
-    content: v
+    content: v,
   });
 });
 
 _("message-send").select();
 
-_("channel-bar-title").onmouseover = function() {
+_("channel-bar-title").onmouseover = function () {
   let d = _("channel-divider").style;
   d.width = "100%";
   d["border-radius"] = "0px";
   d.margin = "-10px 0px 4px 0px";
 };
-_("channel-bar-title").onmouseout = function() {
+_("channel-bar-title").onmouseout = function () {
   let d = _("channel-divider").style;
   d.width = "10vw";
   d["border-radius"] = "10px";
   d.margin = "-10px 4vw 4px 4vw";
 };
 
-_("message-bar-title").onmouseover = function() {
+_("message-bar-title").onmouseover = function () {
   let d = _("message-bar-divider").style;
   d.width = "100%";
   d["border-radius"] = "0px";
   d.margin = "-10px 0px 4px 0px";
 };
-_("message-bar-title").onmouseout = function() {
+_("message-bar-title").onmouseout = function () {
   let d = _("message-bar-divider").style;
   d.width = "40vw";
   d["border-radius"] = "10px";
@@ -179,7 +179,7 @@ let themes = {
     dark: "#e8e8e8",
     black: "#dfdfdf",
     text: "#000000",
-    hashtag: "black"
+    hashtag: "black",
   },
   2: {
     bright: "#ebedef",
@@ -187,7 +187,7 @@ let themes = {
     dark: "#f2f3f5",
     black: "#e3e5e8",
     text: "#2e3338",
-    hashtag: "black"
+    hashtag: "black",
   },
   3: {
     bright: "#25bdff",
@@ -195,7 +195,7 @@ let themes = {
     dark: "#0048ff",
     black: "#0024bd",
     text: "#000000",
-    hashtag: "white"
+    hashtag: "white",
   },
   4: {
     bright: "#40444b",
@@ -203,7 +203,7 @@ let themes = {
     dark: "#2f3136",
     black: "#202225",
     text: "#dcddde",
-    hashtag: "white"
+    hashtag: "white",
   },
   5: {
     bright: "#2d2c2c",
@@ -211,8 +211,8 @@ let themes = {
     dark: "#0e0d0d",
     black: "#060606",
     text: "#E0E0E0",
-    hashtag: "white"
-  }
+    hashtag: "white",
+  },
 };
 
 let t = 5;
@@ -245,7 +245,7 @@ function setTheme(theme) {
 }
 
 if (window.location.href.includes("?theme=x")) {
-  setInterval(function() {
+  setInterval(function () {
     if (t == 6) t = 2;
     setTheme(t);
     t++;

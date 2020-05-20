@@ -1,6 +1,6 @@
 :root {
-  --text: #E0E0E0;
-  --link: #00ADFF;
+  --text: #e0e0e0;
+  --link: #00adff;
   --hash: url("/hashtag.svg");
 
   --background-bright: #2d2c2c;
@@ -8,12 +8,12 @@
   --background-dark: #0e0d0d;
   --background-black: #060606;
 
-  --discord-purple: #7289DA;
-  --discord-purple-darker: #5F72B3;
-  --discord-gray: #99AAB5;
-  --discord-gray-darker: #455A64;
-  --discord-dark: #2C2F33;
-  --discord-black: #23272A;
+  --discord-purple: #7289da;
+  --discord-purple-darker: #5f72b3;
+  --discord-gray: #99aab5;
+  --discord-gray-darker: #455a64;
+  --discord-dark: #2c2f33;
+  --discord-black: #23272a;
   --discord-black-darker: #151515;
 }
 
