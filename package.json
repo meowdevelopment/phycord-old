@@ -10,16 +10,7 @@
     "express": "^4.17.1",
     "socket.io": "^2.3.0"
   },
-  "engines": {
-    "node": "10.x"
-  },
   "repository": {
-    "url": "https://glitch.com/edit/#!/hello-express"
-  },
-  "license": "MIT",
-  "keywords": [
-    "node",
-    "glitch",
-    "express"
-  ]
+    "url": "https://github.com/meowdevelopment/phycord-old"
+  }
 }
